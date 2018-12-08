@@ -6,6 +6,11 @@ apk add git openssh make python2 python3 lynx zsh bash vim nano mpd mpc mpv ncur
 nano /etc/passwd
 
 mkdir ~/.scripts
+
+
 curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.profile
 curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.bashrc
+
+cd ~/.scripts/
+curl -LO https://raw.githubusercontent.com/LukeSmithxyz/voidrice/master/.scripts/unix
 
