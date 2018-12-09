@@ -11,7 +11,7 @@ putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriti
 apk update
 apk upgrade
 
-apk add git openssh make python2 python3 lynx zsh bash vim nano mpd mpc mpv ncurses tmux neofetch curl w3m weechat wget cfdisk util-linux rover bash-completion busybox-extras sudo ircii
+apk add git openssh make python2 python3 lynx zsh bash vim nano mpd mpc mpv ncurses tmux neofetch curl w3m weechat wget cfdisk util-linux rover bash-completion busybox-extras sudo ircii dialog
 
 printf "${CYAN}Installing SSH, Python 3 and nano because why not\n${NC}"
 apk add openssh-client openssh-server python3 nano
