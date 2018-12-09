@@ -7,10 +7,12 @@ nano /etc/passwd
 
 mkdir ~/.scripts
 
-
+cd ~/
 curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.profile
 curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.bashrc
 
 cd ~/.scripts/
 curl -LO https://raw.githubusercontent.com/LukeSmithxyz/voidrice/master/.scripts/unix
 
+printf "" > /etc/motd
+echo "sh /root/.scripts/unix" >> ~/.profile
