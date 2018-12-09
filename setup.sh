@@ -1,3 +1,13 @@
+putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriting conflicts
+    dialog --infobox "Downloading and installing config files..." 4 60
+    dir=$(mktemp -d)
+    git clone --depth 1 "$1" "$dir"/gitrepo &>/dev/null &&
+    mkdir -p "$2" &&
+    cp -rT "$dir"/gitrepo "$2"
+}
+
+
+
 apk update
 apk upgrade
 
@@ -15,8 +25,9 @@ nano /etc/passwd
 mkdir ~/.scripts
 
 cd ~/
-curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.profile
-curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.bashrc
+putgitrepo "https://github.com/allbombson/alpine-dotfiles" "~/"
+#curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.profile
+#curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.bashrc
 
 cd ~/.scripts/
 curl -LO https://raw.githubusercontent.com/LukeSmithxyz/voidrice/master/.scripts/unix
