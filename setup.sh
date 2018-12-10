@@ -47,3 +47,5 @@ chmod +x ~/.scripts/.*.*
 
 printf "" > /etc/motd
 echo "sh /root/.scripts/unix" >> ~/.profile
+
+echo "Run ':set term=builtin_ansi' in vim to fix it"
