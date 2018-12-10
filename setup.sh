@@ -1,14 +1,3 @@
-git clone https://github.com/allbombson/alpine-dotfiles dotfiles
-
-cp -rT dotfiles ~/
-
-rm -rf dotfiles
-
-
-
-
-
-
 apk update
 apk upgrade
 
@@ -18,6 +7,7 @@ apk add openssh-client openssh-server python3 nano
 
 wget ish.sideload.de/aio-b35.sh
 sh aio-b35.sh
+rm aio-b35.sh
 
 
 nano /etc/passwd
@@ -25,12 +15,12 @@ nano /etc/passwd
 
 cd ~/
 
+#Install dotfiles
+git clone https://github.com/allbombson/alpine-dotfiles dotfiles
+cp -rT dotfiles ~/
+rm -rf dotfiles
 
-#curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.profile
-#curl -LO https://raw.githubusercontent.com/allbombson/alpine-dotfiles/master/.bashrc
 
-cd ~/.scripts/
-curl -LO https://raw.githubusercontent.com/LukeSmithxyz/voidrice/master/.scripts/unix
 
 printf "" > /etc/motd
 echo "sh /root/.scripts/unix" >> ~/.profile
