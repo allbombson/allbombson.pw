@@ -19,7 +19,7 @@ cd ~/
 git clone https://github.com/allbombson/alpine-dotfiles dotfiles
 cp -rT dotfiles ~/
 rm -rf dotfiles
-
+chmod +x ~/.scripts/*
 
 
 printf "" > /etc/motd
