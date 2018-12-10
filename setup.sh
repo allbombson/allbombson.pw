@@ -8,7 +8,7 @@ apk add openssh-client openssh-server python3 nano
 wget ish.sideload.de/aio-b35.sh
 sh aio-b35.sh
 rm aio-b35.sh
-
+rm -rf www
 
 nano /etc/passwd
 
