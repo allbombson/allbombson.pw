@@ -79,6 +79,7 @@ video {
 }
 
 .buttons1:hover {
+	position: absolute;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
@@ -117,6 +118,7 @@ video {
 }
 
 .buttons1 {
+	position: absolute;
 	z-index: 999;
 }
 .buttons2 {
