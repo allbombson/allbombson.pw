@@ -13,7 +13,10 @@
 
 
 body {
-  
+  position: relative;
+	z-index: 999;
+	
+	
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
