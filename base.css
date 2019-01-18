@@ -13,7 +13,7 @@
 
 
 body {
-  z-index: 999;
+  
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -80,32 +80,59 @@ video {
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
+	z-index: 999;
 }
 .buttons2:hover {
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
+	z-index: 999;
 }
 .buttons3:hover {
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
+	z-index: 999;
 }
 .buttons4:hover {
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
+	z-index: 999;
 }
 .buttons5:hover {
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
+	z-index: 999;
 }
 
 .buttons6:hover {
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
+	z-index: 999;
+}
+
+.buttons1 {
+	z-index: 999;
+}
+.buttons2 {
+	z-index: 999;
+}
+.buttons3 {
+
+	z-index: 999;
+}
+.buttons4 {
+	z-index: 999;
+}
+.buttons5 {
+	z-index: 999;
+}
+
+.buttons6 {
+	z-index: 999;
 }
 
 /* hardware acceleration */
