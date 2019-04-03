@@ -79,31 +79,35 @@ video {
 }
 
 .buttons1:hover {
-
+position: relative;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
 	z-index: 999;
 }
 .buttons2:hover {
+	position: relative;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
 	z-index: 999;
 }
 .buttons3:hover {
+	position: relative;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
 	z-index: 999;
 }
 .buttons4:hover {
+	position: relative;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
 	z-index: 999;
 }
 .buttons5:hover {
+	position: relative;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
@@ -111,6 +115,7 @@ video {
 }
 
 .buttons6:hover {
+	position: relative;
     text-decoration: underline;
 	color: #c71045;
 	font-size: 25px;
@@ -118,24 +123,28 @@ video {
 }
 
 .buttons1 {
-	
+	position: relative;
 	z-index: 999;
 }
 .buttons2 {
+	position: relative;
 	z-index: 999;
 }
 .buttons3 {
-
+	position: relative;
 	z-index: 999;
 }
 .buttons4 {
+	position: relative;
 	z-index: 999;
 }
 .buttons5 {
+	position: relative;
 	z-index: 999;
 }
 
 .buttons6 {
+	position: relative;
 	z-index: 999;
 }
 
